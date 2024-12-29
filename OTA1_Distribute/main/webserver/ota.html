@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 OTA Firmware Upload</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link đến file CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>ESP32 OTA Firmware Upload</h1>
+        <p>Select a firmware file (.bin) to upload to your ESP32 device.</p>
+
+        <!-- File upload và No Upgrade nằm cùng hàng -->
+        <div class="button-row">
+            <label for="fileInput" class="custom-file-upload">Choose File</label>
+            <input type="file" id="fileInput" accept=".bin" />
+            <button id="noUpgradeBtn">No Upgrade</button>
+        </div>
+        <div id="fileName" class="file-name"></div>
+
+        <!-- Upload button -->
+        <button id="uploadBtn">Upload</button>
+
+        <!-- Status display -->
+        <div id="status"></div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
